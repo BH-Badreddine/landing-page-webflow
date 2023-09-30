@@ -32,20 +32,54 @@ div.video-Presentation .animation-content {
     width: 50%;
 }
 button.Monbouton {
-    width: 20%;
+    padding: 8px;
+    width: 35%;
 }
 ul.navbar-nav li {
     margin-right: 25px;
 }
-.nav-underline .nav-link {
+/*******************************************************/
+@media all and (max-width: 990px) {
+    ul.nav-underline li a.nav-link {
+        width: 108px;
+        padding: 8px 12px 8px 8px;
+    }
+    ul.nav-underline {
+        margin-left: 0px !important;
+        margin-top: 12px;
+    }
+    ul.login li  {
+        width: 30%;
+        margin: 18px auto; 
+    }
+    ul.login li a#login-btn {
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer {
+        bottom: -1000px !important; 
+    }
+}
+@media all and (max-width: 768px) {
+    footer {
+        bottom: -2100px !important; 
+    }
+}
+/**************************************************/
+ul.nav-underline a.nav-link {
     transition-duration: .4s;
 }
-.nav-underline .nav-link:hover {
+ul.nav-underline a.nav-link:hover {
     border-bottom-color: cyan;
   }
 ul.navbar-nav li a {
     font-size: 15px;
     font-weight: bold;
+}
+ul.navbar-nav li a.dropdown-item {
+    margin-left: 10px;
+    width: 100%;
+    padding-left: 8px;
 }
 a#login-btn {
     width: 100px;
